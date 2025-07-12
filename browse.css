@@ -1,0 +1,140 @@
+/* browse.css - Styles for browse.html */
+
+.browse {
+    padding: 60px 0;
+}
+
+.browse-header {
+    margin-bottom: 30px;
+}
+
+.filters {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: 0 20px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-options select {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background: white;
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 180px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.item-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-img {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e7d32;
+    font-size: 3rem;
+}
+
+.item-info {
+    padding: 15px;
+}
+
+.item-info h4 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.item-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #757575;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.item-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.pagination a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.pagination a:hover,
+.pagination a.active {
+    background: #2e7d32;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-options select {
+        min-width: 100%;
+    }
+}
