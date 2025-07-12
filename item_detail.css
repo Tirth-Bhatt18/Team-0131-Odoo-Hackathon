@@ -1,0 +1,54 @@
+body {
+      font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5;
+    }
+    header, footer {
+      background: #2e7d32; color: white; padding: 15px;
+    }
+    .container {
+      max-width: 1000px; margin: auto; padding: 20px;
+    }
+    .main-img {
+      width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;
+    }
+    .item-info h1 {
+      margin-top: 20px; color: #1b5e20;
+    }
+    .item-info .price {
+      font-size: 1.5rem; color: #4caf50; font-weight: bold;
+    }
+    .details p {
+      margin: 5px 0;
+    }
+    .actions {
+      display: flex; gap: 10px; margin: 20px 0;
+    }
+    .btn {
+      flex: 1;
+      padding: 10px; border: none; border-radius: 5px;
+      font-weight: bold; cursor: pointer;
+    }
+    .btn-swap { background: #e8f5e9; color: #2e7d32; }
+    .btn-points { background: #fff3e0; color: #e65100; }
+    .btn-save { background: #e3f2fd; color: #1565c0; }
+    .similar {
+      margin-top: 40px;
+    }
+    .similar h2 {
+      color: #1b5e20;
+    }
+    .items {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px;
+    }
+    .item-card {
+      background: white; padding: 10px; border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1); text-align: center;
+    }
+    .item-card img {
+      width: 100%; height: 150px; object-fit: cover; border-radius: 5px;
+    }
+    .item-card .name {
+      font-weight: bold; margin: 10px 0 5px;
+    }
+    .item-card .price {
+      color: #2e7d32;
+    }
