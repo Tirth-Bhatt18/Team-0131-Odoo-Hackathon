@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add New Item – ReWear</title>
+  <link rel="stylesheet" href="add_item.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">ReWear</a>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>List a New Clothing Item</h2>
+    <form>
+      <label for="images">Upload Images</label>
+      <input type="file" id="images" name="images" accept="image/*" multiple />
+
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" placeholder="e.g. Black Leather Jacket" required />
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description" placeholder="Describe your item..." required></textarea>
+
+      <div class="form-row">
+        <div>
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="">Select category</option>
+            <option value="Outerwear">Outerwear</option>
+            <option value="Dress">Dress</option>
+            <option value="T-Shirt">T-Shirt</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Sunglasses">Sunglasses</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="type">Type</label>
+          <input type="text" id="type" name="type" placeholder="e.g. Jacket, Sneakers" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
+          <label for="size">Size</label>
+          <select id="size" name="size">
+            <option value="">Select size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <div>
+          <label>Condition</label>
+          <select id="condition" name="condition">
+            <option value="">Select condition</option>
+            <option value="New">New</option>
+            <option value="Like New">Like New</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="tags">Tags (comma-separated)</label>
+      <input type="text" id="tags" name="tags" placeholder="e.g. casual, denim, vintage" />
+
+      <button type="submit" class="btn">Submit Item</button>
+    </form>
+  </div>
+  <script src="add_item.js"></script>
+</body>
+</html>
