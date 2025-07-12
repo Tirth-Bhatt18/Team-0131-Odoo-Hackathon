@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel – ReWear</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo"><i class="fas fa-recycle"></i> ReWear Admin</a>
+  </header>
+
+  <div class="container">
+    <h2>Moderate New Listings</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>User</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="itemTable">
+        <tr>
+          <td>Floral Summer Dress</td>
+          <td>Ana Sharma</td>
+          <td>Dress</td>
+          <td><span class="status pending">Pending</span></td>
+          <td>
+            <button class="btn btn-approve" onclick="approve(this)">Approve</button>
+            <button class="btn btn-reject" onclick="reject(this)">Reject</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Black Leather Jacket</td>
+          <td>Ravi Mehta</td>
+          <td>Outerwear</td>
+          <td><span class="status pending">Pending</span></td>
+          <td>
+            <button class="btn btn-approve" onclick="approve(this)">Approve</button>
+            <button class="btn btn-reject" onclick="reject(this)">Reject</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
